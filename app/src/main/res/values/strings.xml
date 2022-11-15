@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AppS</string>
+    <string name="drawerOpen">OPEN DRAWER</string>
+    <string name="drawerClose">CLOSE DRAWER</string>
+    <string name="ok">확인</string>
+    <string name="composeMail">메일쓰기</string>
+    <string name="writeMemo">메모 쓰기</string>
+    <string name="close">닫기</string>
+    <string name="exit">종료</string>
+    <string name="sendMail">전송</string>
+    <string name="share">공유</string>
+    <string name="modify">수정</string>
+    <string name="save">저장</string>
+    <string name="delete">삭제</string>
+    <string name="inboxKor">받은메일함</string>
+    <string name="sentKor">보낸메일함</string>
+    <string name="spamKor">스팸메일함</string>
+    <string name="memoKor">메모장</string>
+    <string name="sender">보낸사람</string>
+    <string name="receiver">받은사람</string>
+    <string name="subject">제목</string>
+    <string name="content">내용</string>
+    <string name="date">날짜</string>
+    <string name="hintSubject">제목을 입력해주세요</string>
+    <string name="hintContent">내용을 입력해주세요</string>
+    <string name="hintReceiver">이메일을 입력해주세요</string>
+    <string name="hintId">아이디를 입력해주세요</string>
+    <string name="hintPassword">비밀번호를 입력해주세요</string>
+    <string name="hintName">이름을 입력해주세요</string>
+    <string name="login">로그인</string>
+    <string name="myEmail">ceshin0028@gmail.com</string>
+    <string name="test">TEST TEST TEST</string>
+    <string name="customiseProfile">프로필 맞춤 설정</string>
+    <string name="modifyName">프로필 이름 수정</string>
+    <string name="modifyImage">프로필 이미지 수정</string>
+
+</resources>
