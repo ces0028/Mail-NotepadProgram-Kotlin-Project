@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/dialogHead"
+    android:background="@drawable/item_border_line_main2">
+
+    <LinearLayout
+        style="@style/wrapWrap"
+        android:background="@drawable/item_border_line_white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            style="@style/wrapWrap">
+
+            <TextView
+                android:id="@+id/tvCustomiseProfile"
+                style="@style/customiseProfile" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                style="@style/ivClose"
+                android:background="@drawable/item_border_line_white"
+                app:srcCompat="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/matchWrap"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="bottom"
+                android:padding="5dp"
+                android:text="@string/modifyName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/supportText" />
+
+            <EditText
+                android:id="@+id/edtProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_border_line_white"
+                android:gravity="center_vertical"
+                android:hint="@string/hintName"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/supportText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/btnLayout"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/btnOther"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
