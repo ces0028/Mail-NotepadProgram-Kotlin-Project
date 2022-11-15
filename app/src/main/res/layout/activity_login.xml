@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchMatch"
+    android:padding="10dp"
+    android:background="@color/main"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        style="@style/matchMatch"
+        android:background="@drawable/item_border_line_white"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/wrapWrap"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivMain"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ic_main" />
+
+            <EditText
+                android:id="@+id/tvId"
+                style="@style/loginEdt"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hintId"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/tvPw"
+                style="@style/loginEdt"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hintPassword"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/btnOther"
+                android:layout_marginTop="30dp"
+                android:text="@string/login" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
