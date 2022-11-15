@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headText">25sp</dimen>
+    <dimen name="normalText">18sp</dimen>
+    <dimen name="supportText">15sp</dimen>
+    <dimen name="assistText">13sp</dimen>
+    <dimen name="omakeText">10sp</dimen>
+    <dimen name="imageSize">300dp</dimen>
+</resources>
