@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/matchWrap"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_border_line_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            style="@style/ivClose"
+            android:background="@drawable/item_border_line_white"
+            app:srcCompat="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/showLayout"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tvSubject"
+            style="@style/emailLeft"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/subject" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/showLayout">
+
+        <TextView
+            android:id="@+id/tvFrom"
+            style="@style/emailLeft"
+            android:text="@string/receiver" />
+
+        <TextView
+            android:id="@+id/tvFromAddress"
+            style="@style/emailRight" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/showLayout">
+
+        <TextView
+            android:id="@+id/tvTo"
+            style="@style/emailLeft"
+            android:text="@string/sender" />
+
+        <TextView
+            android:id="@+id/tvToAddress"
+            style="@style/emailRight" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/showLayout">
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/emailLeft"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvDateWhen"
+            style="@style/emailRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/showLayout"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/content" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/btnLayout">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/btnClose"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
