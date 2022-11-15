@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/viewItem"
+    android:background="@drawable/item_border_line_white">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/img_profile_01" />
+
+    <LinearLayout
+        style="@style/matchWrap"
+        android:layout_toEndOf="@id/ivImage"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/matchWrap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFrom"
+                style="@style/itemBold"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="3"
+                android:textSize="@dimen/supportText" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/item"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSubject"
+            style="@style/itemBold" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/item" />
+
+    </LinearLayout>
+
+</RelativeLayout>
