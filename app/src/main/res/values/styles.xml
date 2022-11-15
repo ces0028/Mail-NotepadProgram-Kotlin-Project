@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="matchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="wrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="matchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="toolbar" parent="matchMatch">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#00FFFFFF</item>
+    </style>
+    <style name="tab" parent="toolbar">
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+    <style name="appbar" parent="matchMatch">
+        <item name="android:layout_height">240dp</item>
+    </style>
+    <style name="dialogHead" parent="wrapWrap">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/item_border_line_white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="fragment">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="btnLayout" parent="matchWrap">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="button" parent="wrapWrap">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <style name="btnClose" parent="button">
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:text">@string/close</item>
+    </style>
+    <style name="btnOther" parent="button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/main</item>
+    </style>
+    <style name="Efab" parent="wrapWrap">
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:backgroundTint">@color/main</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="mailEfab" parent="Efab">
+        <item name="android:text">@string/composeMail</item>
+    </style>
+    <style name="memoEfab" parent="Efab">
+        <item name="android:text">@string/writeMemo</item>
+    </style>
+    <style name="navigationView" parent="matchMatch">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+    <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    </style>
+    <style name="dialogMemoContent" parent="btnLayout">
+        <item name="android:layout_height">300dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+    <style name="dialogSendBody" parent="dialogMemoContent">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/item_border_line_main2</item>
+    </style>
+    <style name="dialogMemoEdtContent">
+        <item name="android:background">@drawable/item_border_line_white</item>
+        <item name="android:ems">18</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:hint">@string/hintContent</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/supportText</item>"
+    </style>
+    <style name="view" parent="matchMatch">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+    <style name="loginEdt">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="background">@drawable/item_border_line_white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normalText</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="icon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="ivClose" parent="icon">
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="customiseProfile" parent="wrapWrap">
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:fontFamily">@font/suit_bold</item>
+        <item name="android:text">@string/customiseProfile</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/headText</item>
+    </style>
+    <style name="item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/suit_regular</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">@string/test</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/assistText</item>
+    </style>
+    <style name="itemBold" parent="item">
+        <item name="android:fontFamily">@font/suit_bold</item>
+    </style>
+    <style name="emailLeft">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/supportText</item>
+    </style>
+    <style name="emailRight" parent="emailLeft">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">5dp</item>
+    </style>
+    <style name="showLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/item_border_line_main2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLines">15</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/supportText</item>
+    </style>
+    <style name="viewItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+</resources>
