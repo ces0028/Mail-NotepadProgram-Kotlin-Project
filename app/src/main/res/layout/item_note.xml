@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/viewItem"
+    android:background="@drawable/item_border_line_white"
+    android:padding="10dp">
+
+    <LinearLayout
+        style="@style/wrapWrap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/wrapWrap">
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                style="@style/wrapWrap"
+                android:fontFamily="@font/suit_regular"
+                android:text="@string/test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/omakeText" />
+
+            <ImageView
+                android:id="@+id/ivStar"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_star_blank" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/item"
+            android:textStyle="normal"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:maxLines="4" />
+
+    </LinearLayout>
+
+</RelativeLayout>
